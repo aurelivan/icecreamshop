@@ -11,31 +11,97 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <div id="menu">
-      <a class="menu menu-home" href="">Home</a>
-      <a class="menu menu-about" href="">About</a>
-      <a class="menu menu-contact" href="">Contact</a>
-    </div>
-    <br />
-    <img class="cat" src="kucing.jpg" alt="kocheng" />
-    <br />
-    <div class="title">
-      <h1 class="title1">I'M AURELIUS IVAN WIJAYA.</h1>
-      <h1 class="title2">I'M A STUDENT</h1>
-      <br /><br /><br />
-    </div>
-    <br />
-    <div class="paragraf">
-      <p>You know... just testing github page. so.. enjoy your visit.</p>
-      <p>this actually my first time using git hub page</p>
-      <p>hello world!</p>
+    <div class="bar">
+      <h3><a class="menu menu-home" href="#home">Home</a></h3>
+      <hr />
+      <h3><a class="menu menu-about" href="#about">About</a></h3>
+      <hr />
+      <h3><a class="menu menu-contact" href="#contact">Contact</a></h3>
+
+      <div class="email">
+        <hr class="line" />
+        <table>
+          <tr>
+            <td rowspan="2">
+              <img class="profile" src="kucing.jpg" alt="profile" />
+            </td>
+            <td><p1>Ivan</p1></td>
+          </tr>
+          <tr>
+            <td><p2>support@gmail.com</p2></td>
+          </tr>
+        </table>
+      </div>
     </div>
 
-    <button class="more"><span>MORE ABOUT ME</span></button>
+    <div class="main">
+      <div id="home">
+        <div class="catty">
+          <img class="cat" src="kucing.jpg" alt="kocheng" />
+        </div>
+        <br />
+        <div class="title">
+          <h1 class="title1">I'M AURELIUS IVAN WIJAYA.</h1>
+          <h1 class="title2">I'M A STUDENT</h1>
+        </div>
+        <br />
+        <div class="paragraf">
+          <p>You know... just testing github page. so.. enjoy your visit.</p>
+          <p>this actually my first time using git hub page</p>
+          <p>hello world!</p>
+        </div>
+        <button class="more"><span>MORE ABOUT ME</span></button>
 
-    <a href="#" class="fa fa-facebook"></a>
-    <a href="#" class="fa fa-twitter"></a>
-    <a href="https://www.instagram.com/aureli.van/" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a
+          href="https://www.instagram.com/aureli.van/"
+          class="fa fa-instagram"
+        ></a>
+      </div>
+      <div id="about">
+        <h1>ABOUT</h1>
+        <p>
+          This is my first personal page, and hope you like it. anyway, i
+          started to put some effort to make development on my site, so, stay
+          tuned!
+        </p>
+        <p>
+          So, the plan is i was trying to make some section within one page, so
+          people can access information from this page without going to another
+          page. Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum
+        </p>
+        <img
+          src="https://i.pinimg.com/originals/f7/fd/93/f7fd935d93b85a5a9a5b0655566c1b75.jpg"
+          alt="zenitsu"
+        />
+      </div>
+
+      <div id="contact">
+        <h1>Contact:</h1>
+        <table>
+          <tr>
+            <td>Phone Number</td>
+            <td>:</td>
+            <td>08123456789</td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>:</td>
+            <td>icecreamshop@dududu.com</td>
+          </tr>
+        </table>
+      </div>
+    </div>
   </body>
 </html>
