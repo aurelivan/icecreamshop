@@ -54,6 +54,11 @@ h1 {
 p {
   text-align: center;
 }
+
+.paragraf {
+  line-height: 0.2;
+}
+
 .more {
   display: inline-block;
   height: 4em;
