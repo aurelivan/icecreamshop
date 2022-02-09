@@ -91,6 +91,11 @@ body {
   transition: 4s;
 }
 
+.cat:active {
+  border-radius: 40% 80% 80% 30% / 40% 40% 30% 50%;
+  border-radius: 80% 20% 40% 70% / 70% 70% 50% 50%;
+  animation-iteration-count: infinite;
+}
 .cat:hover {
   border-radius: 40% 80% 80% 30% / 40% 40% 30% 50%;
   animation-iteration-count: infinite;
@@ -118,6 +123,7 @@ body {
 }
 
 .more {
+  border-style: solid;
   display: inline-block;
   height: 4em;
   width: 14em;
@@ -132,6 +138,7 @@ body {
   cursor: pointer;
   margin: 5px;
   vertical-align: middle;
+  font-weight: bold;
 }
 
 .more span {
