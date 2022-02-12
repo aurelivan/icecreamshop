@@ -83,22 +83,37 @@ body {
   text-align: center;
 }
 
+/*animation for profile*/
+
 .cat {
   padding: 5px;
   width: 15em;
   border-radius: 80% 20% 40% 70% / 70% 70% 50% 50%;
   padding: 1px;
-  transition: 4s;
+  animation: cat 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
 }
 
-.cat:active {
-  border-radius: 40% 80% 80% 30% / 40% 40% 30% 50%;
-  border-radius: 80% 20% 40% 70% / 70% 70% 50% 50%;
-  animation-iteration-count: infinite;
-}
-.cat:hover {
-  border-radius: 40% 80% 80% 30% / 40% 40% 30% 50%;
-  animation-iteration-count: infinite;
+@keyframes cat {
+  0% {
+    border-radius: 80% 20% 40% 70% / 70% 70% 50% 50%;
+  }
+  25% {
+    border-radius: 50% 50% 60% 40% / 50% 50% 50% 50%;
+  }
+  50% {
+    border-radius: 40% 50% 30% 30% / 60% 50% 50% 50%;
+  }
+
+  75% {
+    border-radius: 40% 50% 50% 30% / 40% 50% 50% 50%;
+  }
+
+  100% {
+    border-radius: 80% 20% 40% 70% / 70% 70% 50% 50%;
+  }
 }
 
 .title {
@@ -227,6 +242,34 @@ body {
   border-radius: 20px;
 }
 
+#portofolio {
+  height: 100vh;
+  padding: 20px;
+  padding-top: 20px;
+}
+
+#portofolio h1 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.photo {
+  display: flex;
+  justify-content: space-around;
+}
+.photobox {
+  border-radius: 10px;
+  height: 400px;
+  width: auto;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+
+.photobox:hover {
+  opacity: 50%;
+}
+
 #contact {
+  background-color: #13192c;
   height: 100vh;
 }
