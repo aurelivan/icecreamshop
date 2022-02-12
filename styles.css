@@ -16,10 +16,13 @@ hr {
 body {
   background-color: #111420;
   color: white;
+  overflow-x: hidden;
 }
 .main {
   margin-left: 300px;
 }
+
+/*sidebar settings*/
 .bar {
   position: fixed;
   background-color: #06080a;
@@ -30,6 +33,34 @@ body {
   padding: 3% 1%;
   display: block;
 }
+
+.link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.menu {
+  padding: 10% 10% 10% 10%;
+  margin-bottom: 5%;
+  color: #ffffff;
+  display: flex;
+  text-align: center;
+  justify-content: start;
+  font-size: 20px;
+}
+.menu-home img {
+  margin-right: 10px;
+  filter: invert(1);
+  height: 20px;
+}
+
+.menu:hover {
+  transition: 0.3s;
+  border-radius: 10px;
+  background-color: #5c5c5c;
+  color: #ffffff;
+}
+
 .profile {
   height: 40px;
   border-radius: 50%;
@@ -52,22 +83,7 @@ body {
   opacity: 50%;
 }
 
-.menu {
-  padding: 10% 50% 10% 40%;
-  margin-bottom: 5%;
-  color: #ffffff;
-  text-align: left;
-  display: block;
-  text-align: left;
-}
-
-.menu:hover {
-  transition: 0.3s;
-  border-radius: 10px;
-  background-color: #5c5c5c;
-  color: #ffffff;
-}
-
+/*primary content page*/
 #home {
   height: 100vh;
   width: auto;
@@ -146,6 +162,34 @@ body {
   color: white;
 }
 
+/*social media logo*/
+
+.media {
+  display: flex;
+  justify-content: center;
+}
+
+.social {
+  height: 20px;
+  width: auto;
+  filter: invert(1);
+  margin: 5px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+#social {
+  padding: 0 10px 0 10px;
+}
+#social:not(:last-child) {
+  border-right: 1px solid rgb(255, 255, 255, 0.3);
+}
+
+.social:hover {
+  transform: translateY(-40%);
+}
+
+/*paragraf in profile*/
 .paragraf {
   line-height: 1;
   margin: 3%;
@@ -195,40 +239,6 @@ body {
 .more:hover span:after {
   opacity: 1;
   right: 0;
-}
-
-.fa {
-  padding: 20px;
-  float: right;
-  font-size: 30px;
-  width: 70px;
-  height: 70px;
-  text-align: center;
-  margin: 5px 5px;
-  border-radius: 50%;
-}
-
-.fa:hover {
-  opacity: 0.7;
-}
-.fa fa home {
-  background: #ffffff;
-  color: #111420;
-}
-
-.fa-facebook {
-  background: #ffffff;
-  color: #111420;
-}
-
-.fa-twitter {
-  background: #ffffff;
-  color: #111420;
-}
-
-.fa-instagram {
-  background: #ffffff;
-  color: #111420;
 }
 
 #about {
@@ -301,9 +311,37 @@ body {
   opacity: 0.5;
 }
 
+.contact2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cont {
+  margin-top: 10px;
+  background-color: #06080a;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  animation: contact 2s;
+  animation-iteration-count: calc();
+}
+
+@keyframes contact {
+  from {
+    transform: translateX(-100%);
+    opacity: 0.1;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
 .input {
   opacity: 0.5;
   display: block;
   margin-top: 10px;
   text-align: center;
+  border-radius: 10px;
+  width: 100%;
 }

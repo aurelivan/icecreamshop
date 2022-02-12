@@ -10,19 +10,40 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
   <body>
+    <!--sidebar-->
+    <!--menu-->
     <div class="bar">
-      <h3><a class="menu menu-home" href="#home">Home</a></h3>
+      <a class="menu menu-home" href="#home">
+        <img src="images/house.svg" />
+        <h3>
+          <div class="link link-home">Home</div>
+        </h3>
+      </a>
       <hr />
-      <h3><a class="menu menu-about" href="#about">About</a></h3>
+      <a class="menu menu-home" href="#about">
+        <img src="images/user.svg" />
+        <h3>
+          <div class="link link-home">About</div>
+        </h3>
+      </a>
       <hr />
-      <h3><a class="menu menu-portofolio" href="#portofolio">Portofolio</a></h3>
+      <a class="menu menu-home" href="#portofolio">
+        <img src="images/book.svg" />
+        <h3>
+          <div class="link link-home">Portofolio</div>
+        </h3>
+      </a>
       <hr />
-      <h3><a class="menu menu-contact" href="#contact">Contact</a></h3>
-
+      <a class="menu menu-home" href="#contact">
+        <img src="images/phone.svg" />
+        <h3>
+          <div class="link link-home">Contact</div>
+        </h3>
+      </a>
+      <!--profile in the bottom-->
       <div class="email">
         <hr class="line" />
         <table>
@@ -38,7 +59,7 @@
         </table>
       </div>
     </div>
-
+    <!--main page-->
     <div class="main">
       <div id="home">
         <div class="displaypic">
@@ -52,19 +73,45 @@
           <h1 class="title2">I'M A STUDENT</h1>
         </div>
         <br />
+        <!--Social media icon in the home page-->
+        <div class="media">
+          <a id="social" href="#">
+            <img class="social social-facebook" src="images/facebook.svg"
+          /></a>
+          <a id="social" href="#">
+            <img
+              class="social social-instagram"
+              src="images/instagram.svg"
+              alt=""
+            />
+          </a>
+          <a id="social" href="#">
+            <img
+              class="social social-twitter"
+              src="images/twitter.svg"
+              alt=""
+            />
+          </a>
+          <a id="social" href="#">
+            <img class="social social-line" src="images/line.svg" alt="" />
+          </a>
+          <a id="social" href="#">
+            <img
+              class="social social-linkedin"
+              src="images/linkedin.svg"
+              alt=""
+            />
+          </a>
+        </div>
+        <!--Paragraf in the home page-->
+        <br />
+        <hr />
         <div class="paragraf">
           <p>You know... just testing github page. so.. enjoy your visit.</p>
           <p>this actually my first time using git hub page</p>
           <p>hello world!</p>
         </div>
         <button class="more"><span>MORE ABOUT ME</span></button>
-
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a
-          href="https://www.instagram.com/aureli.van/"
-          class="fa fa-instagram"
-        ></a>
       </div>
       <div id="about">
         <h1><strong>ABOUT ME</strong></h1>
@@ -133,20 +180,22 @@
       <div id="contact">
         <h1>Contact</h1>
         <p>Keep in touch.</p>
-        <div class="email2">
-          <img src="" alt="" />
-          <h2>Email</h2>
-          <p>icecreamshop@support.com</p>
-        </div>
-        <div class="phone">
-          <img src="" alt="" />
-          <h2>Phone</h2>
-          <p>+62 1234567890</p>
-        </div>
-        <div class="address">
-          <img src="" alt="" />
-          <h2>Address</h2>
-          <p>Tangerang Selatan, Banten, Indonesia</p>
+        <div class="contact2">
+          <div class="cont cont-email2">
+            <img src="" alt="" />
+            <h2>Email</h2>
+            <p>icecreamshop@support.com</p>
+          </div>
+          <div class="cont cont-phone">
+            <img src="" alt="" />
+            <h2>Phone</h2>
+            <p>+62 1234567890</p>
+          </div>
+          <div class="cont cont-address">
+            <img src="" alt="" />
+            <h2>Address</h2>
+            <p>Tangerang Selatan, Banten, Indonesia</p>
+          </div>
         </div>
         <div class="chat">
           <div>
@@ -162,7 +211,7 @@
               type="text"
               placeholder="Message *"
             />
-            <button class="submit">Submit</button>
+            <button class="submit"><a href="submit.html">Submit</a></button>
           </div>
         </div>
       </div>
