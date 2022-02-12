@@ -354,24 +354,53 @@ body {
   width: 30%;
   animation: contact 2s;
   animation-iteration-count: calc();
+  overflow-wrap: break-word;
 }
 
-@keyframes contact {
-  from {
-    transform: translateX(-100%);
-    opacity: 0.1;
-  }
-  to {
-    transform: translateX(0%);
-    opacity: 1;
-  }
+.chat {
+  background-color: #0d111b;
+  border-radius: 10px;
+  margin: 20px 0px 20px 0px;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.chat p {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  font-size: 20px;
 }
 
 .input {
-  opacity: 0.5;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0 20px 0 20px;
+  height: 40px;
   display: block;
   margin-top: 10px;
-  text-align: center;
   border-radius: 10px;
   width: 100%;
+}
+
+.submit {
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  height: 4em;
+  width: 14em;
+  padding: 10px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background: #ffffff;
+  border-radius: 10px;
+  margin-top: 10px;
+  vertical-align: middle;
+  transition: 0.3s;
+  font-size: 10px;
+}
+
+.submit:hover {
+  border: 1px solid #ffffff;
+  background-color: #0d111b;
+  color: #ffffff;
 }
