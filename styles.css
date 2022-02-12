@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:wght@900&display=swap");
 
+@font-face {
+  font-family: titlefont;
+  src: url(font/TTInterfaces-Bold.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -154,12 +159,15 @@ body {
 }
 
 .title1 {
-  color: #d66910;
-  font-size: 2em;
+  color: #ffffff;
+  font-family: titlefont;
+  font-weight: bold;
+  font-size: 2.5em;
 }
 
 .title2 {
-  color: white;
+  color: rgb(179, 101, 70);
+  font-size: 2em;
 }
 
 /*social media logo*/
@@ -192,23 +200,26 @@ body {
 /*paragraf in profile*/
 .paragraf {
   line-height: 1;
-  margin: 3%;
+  margin: 20px 200px 20px 200px;
   text-align: center;
   opacity: 60%;
 }
 
+/*more icon*/
+.bottom {
+  display: flex;
+  justify-content: center;
+}
 .more {
-  border-style: solid;
+  border: 2px solid rgb(255, 255, 255, 0.5);
   display: inline-block;
   height: 4em;
   width: 14em;
   padding: 1em;
   text-align: center;
   color: aliceblue;
-  background: #111420 !important;
+  background: #111420;
   border-radius: 50px;
-  border-color: #ffffff;
-  border-width: 5px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -216,6 +227,9 @@ body {
   font-weight: bold;
 }
 
+.more:hover {
+  background-color: #ffffff;
+}
 .more span {
   cursor: pointer;
   display: inline-block;
@@ -234,6 +248,7 @@ body {
 
 .more:hover span {
   padding-right: 25px;
+  color: #000000;
 }
 
 .more:hover span:after {
@@ -241,11 +256,13 @@ body {
   right: 0;
 }
 
+/*about page*/
+
 #about {
   padding: 5%;
   margin-top: 5%;
   background-color: #13192c;
-  height: 100vh;
+  height: fit-content;
   overflow: hidden;
 }
 
@@ -254,8 +271,8 @@ body {
 }
 
 #about p {
-  margin-right: 20%;
-  opacity: 50%;
+  margin-right: 10%;
+  opacity: 70%;
   font-size: 20px;
 }
 
@@ -269,6 +286,19 @@ body {
   border-radius: 20px;
 }
 
+.biodata {
+  margin-top: 40px;
+  border-radius: 20px;
+  background-color: #111420;
+  padding: 20px;
+}
+
+.biodata h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+/*Portofolio*/
 #portofolio {
   height: 100vh;
   padding: 20px;
