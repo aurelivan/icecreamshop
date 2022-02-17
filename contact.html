@@ -5,6 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+
+  <body>
+    <!--sidebar-->
+    <!--menu-->
+    <div class="bar">
+      <a class="menu menu-home" href="index.html">
+        <img src="images/house.svg" />
+        <h3>
+          <div class="link link-home">Home</div>
+        </h3>
+      </a>
+      <a class="menu menu-home" href="about.html">
+        <img src="images/user.svg" />
+        <h3>
+          <div class="link link-home">About</div>
+        </h3>
+      </a>
+      <a class="menu menu-home" href="portofolio.html">
+        <img src="images/book.svg" />
+        <h3>
+          <div class="link link-home">Portofolio</div>
+        </h3>
+      </a>
+      <a class="menu menu-home" href="contact.html">
+        <img src="images/phone.svg" />
+        <h3>
+          <div class="link link-home">Contact</div>
+        </h3>
+      </a>
+      <!--profile in the bottom-->
+      <div class="email">
+        <table>
+          <tr>
+            <td rowspan="2">
+              <img class="profile" src="kucing.jpg" alt="profile" />
+            </td>
+            <td><p1>Ivan</p1></td>
+          </tr>
+          <tr>
+            <td><p2>support@gmail.com</p2></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!--main page-->
+    <div class="main">
+      <!--contact-->
+
+      <div id="contact">
+        <div class="contact-title">
+        <h1>Contact</h1>
+        <p>Keep in touch.</p>
+      </div>
+
+        <div class="contact2">
+          <div class="cont cont-email2">
+            <img src="/images/mail.svg" alt="" />
+            <h2>Email</h2>
+            <p>icecreamshop@support.com</p>
+          </div>
+          <div class="cont cont-phone">
+            <img src="/images/phone.svg" alt="" />
+            <h2>Phone</h2>
+            <p>+62 1234567890</p>
+          </div>
+          <div class="cont cont-address">
+            <img src="/images/location.svg" alt="" />
+            <h2>Address</h2>
+            <p>Tangerang, Banten, Indonesia</p>
+          </div>
+        </div>
+        <div class="chat">
+          <p>Contact me here!</p>
+          <input class="input input-name" type="text" placeholder="Name *" />
+          <input class="input input-email" type="text" placeholder="Email *" />
+          <input
+            class="input input-message"
+            type="text"
+            placeholder="Message *"
+          />
+          <a href="submit.html"><button class="submit">Submit</button></a>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </body>
 </html>
